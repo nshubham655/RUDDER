@@ -1,3 +1,6 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rudder-a-cross-lingual-video-and-text/video-retrieval-on-charades-sta)](https://paperswithcode.com/sota/video-retrieval-on-charades-sta?p=rudder-a-cross-lingual-video-and-text)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rudder-a-cross-lingual-video-and-text/video-retrieval-on-rudder)](https://paperswithcode.com/sota/video-retrieval-on-rudder?p=rudder-a-cross-lingual-video-and-text)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rudder-a-cross-lingual-video-and-text/video-retrieval-on-didemo)](https://paperswithcode.com/sota/video-retrieval-on-didemo?p=rudder-a-cross-lingual-video-and-text)
 # Instructions for setup
 
 Please refer to https://github.com/albanie/collaborative-experts.
