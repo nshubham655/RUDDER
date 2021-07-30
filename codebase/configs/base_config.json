@@ -1,0 +1,74 @@
+{
+    "arch": {
+        "args": {
+            "ghost_clusters": {
+                "text": 0
+            },
+            "include_self": 1,
+            "keep_missing_modalities": false,
+            "l2renorm": false,
+            "mimic_ce_dims": 0,
+            "num_g_layers": 3,
+            "num_h_layers": 0,
+            "randomise_feats": "",
+            "use_bn_reason": 1,
+            "use_ce": "pairwise",
+            "use_mish": 1,
+            "vlad_clusters": {
+                "audio": 16,
+                "detection-sem": 32,
+                "ocr": 32,
+                "speech": 32,
+                "text": 25
+            }
+        },
+        "type": "CENet"
+    },
+    "disable_nan_checks": false,
+    "experts": {
+        "ce_shared_dim": 300,
+        "drop_feats": "",
+        "modalities": [],
+        "text_agg": "vlad",
+        "text_feat": "w2v",
+        "text_dim": 768
+    },
+    "log_name": "info.json",
+    "lr_scheduler": {
+        "args": {
+            "gamma": 0.95,
+            "step_size": 1
+        },
+        "type": "StepLR"
+    },
+    "metrics": [
+        "t2v_metrics",
+        "v2t_metrics"
+    ],
+    "n_gpu": 1,
+    "optimizer": {
+        "args": {
+            "lr": 0.1,
+            "weight_decay": 0.001
+        },
+        "type": "Ranger"
+    },
+    "seed": 0,
+    "trainer": {
+        "monitor": "max val_v2t_metrics_geometric_mean_R5-R10-R50",
+        "save_dir": "data/saved/",
+        "save_only_best": true,
+        "save_period": 10,
+        "tensorboard": true,
+        "val_freq": 1,
+        "verbosity": 2
+    },
+    "visualizer": {
+        "args": {
+            "num_samples": 100,
+            "src_video_dir": "data/dataset/charades/videos",
+            "vis_vid_freq": 1000
+        },
+        "type": "Visualizer"
+    }
+}
